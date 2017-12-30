@@ -29,7 +29,11 @@ function kiusi(){
   
   const page = await browser.newPage();
   await page.goto('https://cnhv.co/htmx'); 
-  console.log('----XONG--------');
+  console.log('----XONG0--------');
+  setTimeout(async () => await await page.close(), 67000);
+  setTimeout(async () => await browser.close(), 75000);
+  console.log('----XONG-------');
+  
   })();
 }
 
@@ -39,7 +43,7 @@ function f() {
     console.log('-111111111111-------trong f -----------');
     kiusi();
     console.log(Date()); 
-    setTimeout( f, 60000 ); 
+    setTimeout( f, 120000 ); 
     console.log('--tttttttttt--') 
 }
 
