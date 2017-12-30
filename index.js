@@ -34,17 +34,15 @@ function kiusi(){
 
 
 
-function f() {
-    (async () => {
+function f() { 
         console.log('-111111111111-------trong f -----------');
         kiusi();
         console.log(Date()); 
         setTimeout( f, 60000 ); 
-        console.log('--tttttttttt--')
-    })();
+        console.log('--tttttttttt--') 
 }
 
 
-f();
+//f();
  
  
