@@ -29,6 +29,7 @@ function kiusi(){
   
   const page = await browser.newPage();
   await page.goto('https://cnhv.co/htmx'); 
+  console.log('----XONG--------');
   })();
 }
 
