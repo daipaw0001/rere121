@@ -3,6 +3,11 @@ const http = require('http');
  
  
 (async () => { 
+  const requestHandler = (request, response) => {  
+       console.log(request.url)
+       response.end('Hello World')
+  }
+       
   const server = http.createServer(requestHandler)
 
   server.listen(process.env.PORT, (err) => {  
